@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+
+            <span class="logo_name">EcoDrive</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="dasboard.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="vehicle.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.266 1.992a.75.75 0 0 0-.75.75V4.5h-.664a3.25 3.25 0 0 0-3.11 2.303L4.683 7H3.75a.75.75 0 0 0 0 1.5h.533l-.202.827A2.249 2.249 0 0 0 3 11.25v8.5c0 .966.784 1.75 1.75 1.75h1.5A1.75 1.75 0 0 0 8 19.75V18.5h8v1.25c0 .966.784 1.75 1.75 1.75h1.5A1.75 1.75 0 0 0 21 19.75v-8.5c0-.815-.434-1.53-1.083-1.924l-.206-.826h.539a.75.75 0 0 0 0-1.5h-.942l-.055-.184A3.25 3.25 0 0 0 16.14 4.5h-.656V2.742a.75.75 0 0 0-.75-.75H9.266ZM7.852 6h8.288a1.75 1.75 0 0 1 1.676 1.247l.21.702L18.29 9H5.705l.257-1.052l.216-.708A1.75 1.75 0 0 1 7.852 6ZM4.5 18.5h2v1.25a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V18.5Zm13 0h2v1.25a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V18.5ZM8.005 13a1 1 0 1 1-2 0a1 1 0 0 1 2 0ZM17 14a1 1 0 1 1 0-2a1 1 0 0 1 0 2Z"/></svg>
+                    <span class="link-name">Vehicle's</span>
+                </a></li>
+                <li><a href="#">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" 
+                        width="24" 
+                        height="24" 
+                        viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M2 3h20c1.05 0 2 .95 2 2v14c0 1.05-.95 2-2 2H2c-1.05 0-2-.95-2-2V5c0-1.05.95-2 2-2m12 3v1h8V6h-8m0 2v1h8V8h-8m0 2v1h7v-1h-7m-6 3.91C6 13.91 2 15 2 17v1h12v-1c0-2-4-3.09-6-3.09M8 6a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></i>
+                    <span class="link-name">Driver's</span>
+                </a></li>
+                <li><a href="#">
+                    <!-- <i class="uil uil-thumbs-up"></i> -->
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4 18V8.5A4.5 4.5 0 0 1 8.5 4h7A4.5 4.5 0 0 1 20 8.5v7a4.5 4.5 0 0 1-4.5 4.5H6a2 2 0 0 1-2-2z"/><path d="M8 12h3.5a2 2 0 1 1 0 4H8V9a1 1 0 0 1 1-1h1.5a2 2 0 1 1 0 4H9m7 4h.01"/></g></svg></i>
+                    <span class="link-name">Booking</span>
+                </a></li>
+                <li><a href="fuel.html">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="currentColor" d="M1 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v8a2 2 0 0 1 2 2v.5a.5.5 0 0 0 1 0V8h-.5a.5.5 0 0 1-.5-.5V4.375a.5.5 0 0 1 .5-.5h1.495c-.011-.476-.053-.894-.201-1.222a.97.97 0 0 0-.394-.458c-.184-.11-.464-.195-.9-.195a.5.5 0 0 1 0-1c.564 0 1.034.11 1.412.336c.383.228.634.551.794.907c.295.655.294 1.465.294 2.081V7.5a.5.5 0 0 1-.5.5H15v4.5a1.5 1.5 0 0 1-3 0V12a1 1 0 0 0-1-1v4h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V2Zm2.5 0a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-5a.5.5 0 0 0-.5-.5h-5Z"/></svg></i>
+                    <span class="link-name">Fuel</span>
+                </a></li>
+                <li><a href="reminder.html">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M37.275 32.678V21.47A13.27 13.27 0 0 0 27.08 8.569v-.985a3.102 3.102 0 0 0-6.203 0v.996a13.27 13.27 0 0 0-10.152 12.89v11.208L6.52 36.883v1.942h34.96v-1.942Zm-17.948 6.147a4.65 4.65 0 0 0 9.301.048v-.048"/></svg></i>
+                    <span class="link-name">Reminder</span>
+                </a></li>
+                <li><a href="tracking.html">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="m16 24l-6.09-8.6A8.14 8.14 0 0 1 16 2a8.08 8.08 0 0 1 8 8.13a8.2 8.2 0 0 1-1.8 5.13Zm0-20a6.07 6.07 0 0 0-6 6.13a6.19 6.19 0 0 0 1.49 4L16 20.52L20.63 14A6.24 6.24 0 0 0 22 10.13A6.07 6.07 0 0 0 16 4Z"/><circle cx="16" cy="9" r="2" fill="currentColor"/><path fill="currentColor" d="M28 12h-2v2h2v14H4V14h2v-2H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V14a2 2 0 0 0-2-2Z"/></svg></i>
+                    <span class="link-name">Tracking</span>
+                </a></li>
+                <li><a href="#">
+                    <i><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 5H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5.697M18 14v4h4m-4-7V7a2 2 0 0 0-2-2h-2"/><path d="M8 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v0a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2zm6 13a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-6-7h4m-4 4h3"/></g></svg></i>
+                    <span class="link-name">Reports</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="text">Vechicle's</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><path fill="currentColor" d="M15 17h3v2h-3z" class="clr-i-outline clr-i-outline-path-1"/><path fill="currentColor" d="M26.45 14.17A22.1 22.1 0 0 0 19.38 7a9.64 9.64 0 0 0-9-.7a8.6 8.6 0 0 0-4.82 6.4c-.08.47-.14.92-.2 1.36A4 4 0 0 0 2 18v6.13a2 2 0 0 0 2 2V18a2 2 0 0 1 2-2h18.73A7.28 7.28 0 0 1 32 23.27V24h-2a4.53 4.53 0 1 0 .33 2H32a2 2 0 0 0 2-2v-.73a9.28 9.28 0 0 0-7.55-9.1ZM11 14H6.93c0-.31.09-.63.15-1A6.52 6.52 0 0 1 11 8Zm2 0V7.58a8.17 8.17 0 0 1 5.36 1.16A19 19 0 0 1 23.9 14Zm12.8 14.38a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5Z" class="clr-i-outline clr-i-outline-path-2"/><path fill="currentColor" d="M14.17 24a4.53 4.53 0 1 0 .33 2h5.3v-.25A6 6 0 0 1 20 24ZM10 28.38a2.5 2.5 0 1 1 2.5-2.5a2.5 2.5 0 0 1-2.5 2.5Z" class="clr-i-outline clr-i-outline-path-3"/><path fill="none" d="M0 0h36v36H0z"/></svg></i>
+                        <span class="text">Swift Alto</span>
+                        <span class="number">Car</span>
+                    </div>
+                    <div class="box box2">
+                        <i><svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72"><path fill="#FFF" d="M51.065 43.916V10.979H18.937v49.76h16.062"/><circle cx="43.167" cy="52.167" r="11.129" fill="#D0CFCE"/><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"><path d="M51.065 43.916V10.979H18.937v49.76h16.062M23.667 16.02H32m-8.333 8.48h22m-22 3.771h22m-22 3.77h22m-22 3.771h22m-22 3.771h22M36.38 43.35H23.67m9.58 3.77h-9.58m8.45 3.77h-8.45"/><circle cx="43.167" cy="52.167" r="11.129"/><path d="m51.065 60.739l5.467 5.467M33.439 48.453h13.436m-14.703 5.386h14.703"/></g></svg></i>
+                        <span class="text">Booking : 3</span>
+                        <span class="text">Notification : 0</span>
+                        <span class="text">Fuel : 60%</span>
+                    </div>
+                    <!-- <div class="box box3">
+                        <i class="uil uil-thumbs-up"></i>
+                        <span class="text">Total Trips</span>
+                        <span class="number">13</span>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <!-- <i class="uil uil-clock-three"></i> -->
+                    <span class="text"><b>Basic Info</b></span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <!-- <span class="data-title">Registration No</span> -->
+                        <span class="data-list">Registration No</span>
+                        <span class="data-list">Name</span>
+                        <span class="data-list">Model</span>
+                        <span class="data-list">Engine No</span>
+                        <span class="data-list">Manufactured By</span>
+                        <span class="data-list">Type</span>
+                        <span class="data-list">Created Date</span>
+                        <span class="data-list">Modified Date</span>
+
+
+                    </div>
+                    <div class="data email">
+                        <!-- <span class="data-title">Current Location</span> -->
+                        <span class="data-list">AT3</span>
+                        <span class="data-list">Swift Alto</span>
+                        <span class="data-list">2017</span>
+                        <span class="data-list">EVYU5553</span>
+                        <span class="data-list">Suzuki</span>
+                        <span class="data-list">Car</span>
+                        <span class="data-list">2023-03-20</span>
+                        <span class="data-list">2023-03-20</span>
+                    </div>
+        
+                    
+                </div>
+            </div>
+            <!-- <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text"><b>Vehicle Running Status</b></span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Tata Marco</span>
+                        <span class="data-list">Swift Alto</span>
+                        <span class="data-list">Nissan</span>
+
+
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">In Trip</span>
+                        <span class="data-list">In Trip</span>
+                        <span class="data-list">In Trip</span>
+                        <span class="data-list">Not Updated</span>
+                    </div>
+        
+                    
+                </div> -->
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
